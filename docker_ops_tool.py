@@ -131,8 +131,8 @@ class Save:
         self.range = in_a_range
     
     def save_image(self):
-        # Check the type of platfrom, for query the current path directory
-        if platform.system() == 'Windows':
+        # Check the type of the platfrom, for query the current path of the directory
+        if platform.system() == 'Windows': 
             pwd = os.getenv('%cd%')
         elif platform.system() == 'Linux':
             pwd = os.environ['PWD']
